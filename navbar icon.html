@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* <!-- navbar  --> */
+      span {
+        font-size: 2rem;
+        color: white;
+        line-height: 4.5rem;
+        margin-left: 2rem;
+        cursor: pointer;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+      }
+      nav ul {
+        line-height: 4.5rem;
+        list-style: none;
+        margin: auto;
+      }
+      nav ul li {
+        display: inline-block;
+      }
+      nav ul li a {
+        padding: 0.5rem 1rem;
+        border-radius: 0.2rem;
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+        text-decoration: none;
+        transition: all 0.2s linear;
+      }
+      nav ul li a:hover {
+        background-color: rgb(100, 221, 237);
+        color: red;
+      }
+      .social {
+        margin-right: 2rem;
+      }
+      .social a {
+        margin: 0.5rem;
+        line-height: 4.5rem;
+        color: white;
+        border-radius: 0.2rem;
+      }
+      .social a:hover {
+        color: red;
+      }
+      /* main page  */
+
+      .main {
+        width: 100%;
+        height: 100vh;
+        background: url(https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+      }
+      .main h1 {
+        color: rgb(56, 195, 144);
+        font-size: 7rem;
+        text-align: center;
+        line-height: 5.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      input {
+        position: absolute;
+        padding: 1rem 3rem;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        border: none;
+        color: rgb(255, 255, 255);
+        background-color: blueviolet;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      input:hover {
+        background-color: rgb(255, 0, 217);
+      }
+
+      @media (max-width: 62em) {
+        .mobile-navbar-btn {
+          display: block;
+          z-index: 999;
+          border: 3px solid #212529;
+          color: #212529;
+        }
+
+        .header {
+          position: relative;
+        }
+
+        .navbar {
+          width: 100%;
+          height: 100vh;
+          background: #e7f5ff;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: translateX(100%);
+          transition: all 0.5s linear;
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <span>
+          <i class="fa-solid fa-bars"></i>
+        </span>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Social</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </nav>
+
+      <div class="main">
+        <h1>
+          FASHION <br />
+          CHANGING <br />
+          ALWAYS
+        </h1>
+        <input type="button" value="Shop Now" />
+      </div>
+    </div>
+  </body>
+</html>

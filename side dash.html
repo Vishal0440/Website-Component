@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .head {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        background: rgb(50, 55, 55);
+      }
+      .left h3 {
+        margin-left: 50px;
+        color: aliceblue;
+        margin-top: -22px;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+      .left span {
+        color: chartreuse;
+      }
+      input {
+        margin-top: 15px;
+        border-radius: 5px;
+        margin-right: 20px;
+        padding: 5px;
+        font-weight: 600;
+        color: rgb(148, 107, 107);
+        transition: 0.5s ease;
+      }
+      input:hover {
+        background-color: rgb(102, 102, 216);
+        color: white;
+      }
+      .sidebar {
+        background: cadetblue;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 200px;
+        height: 100%;
+      }
+      .logo {
+        margin-bottom: 10px;
+        margin-left: 30px;
+      }
+      .logo h4 {
+        color: rgb(255, 255, 255);
+        margin-top: 0;
+        margin-left: 30px;
+      }
+      .sidebar a {
+        color: aliceblue;
+        display: block;
+        width: 100%;
+        line-height: 60px;
+        text-decoration: none;
+        padding-left: 40px;
+        box-sizing: border-box;
+        transition: 0.3s;
+        transition-property: background;
+      }
+      .sidebar a:hover {
+        background: rgb(50, 128, 205);
+      }
+      .sidebar i {
+        padding-right: 10px;
+      }
+      #hamburger {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <div class="left">
+          <i id="hamburger" class="fa-solid fa-bars"></i>
+          <h3>vishal <span>code</span></h3>
+        </div>
+        <div class="btn">
+          <input class="btn" type="button" value="Logout" />
+        </div>
+      </div>
+    </header>
+
+    <div class="sidebar">
+      <div class="logo">
+        <img src="icon.png" alt="logo" />
+        <h4>Vishal</h4>
+      </div>
+      <a href="#"><i class="fa-solid fa-desktop"></i><span>Dashboard</span></a>
+      <a href="#"><i class="fa-solid fa-cogs"></i><span>Component</span></a>
+      <a href="#"><i class="fa-solid fa-table"></i><span>Tables</span></a>
+      <a href="#"><i class="fa-solid fa-th"></i><span>Forms</span></a>
+      <a href="#"><i class="fa-solid fa-info-circle"></i><span>About</span></a>
+      <a href="#"><i class="fa-solid fa-sliders-h"></i><span>Setting</span></a>
+    </div>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const sidebar = document.querySelector(".sidebar");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        sidebar.classList.toggle("hide");
+      });
+    </script>
+  </body>
+</html>

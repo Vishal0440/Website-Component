@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* footer  */
+
+      .container {
+        max-width: 1170px;
+        margin: auto;
+      }
+      .container h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #ffffff;
+        text-align: center;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      ul {
+        list-style: none;
+      }
+      footer {
+        background-color: #423535;
+        padding: 10px 0;
+      }
+      .footer-col {
+        width: 25%;
+        padding: 0 15px;
+      }
+      .footer-col h4 {
+        font-size: 20px;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+      .footer-col ul li a {
+        font-size: 15px;
+        font-weight: 500;
+        color: #bbbbbb;
+        display: block;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      .footer-col ul li {
+        margin-bottom: 20px;
+      }
+      .footer-col ul li a:hover {
+        color: #ffffff;
+        padding-left: 8px;
+      }
+      .fa-brands {
+        font-size: 20px;
+        margin: 5px;
+        color: #14a44e;
+        transition: all 0.3s ease;
+      }
+      .fa-brands:hover {
+        color: #ffffff;
+      }
+
+      /* mobile screen  */
+
+      @media (max-width: 767px) {
+        .footer-col {
+          width: 50%;
+          margin: bottom 30px;
+        }
+      }
+
+      @media (max-width: 343px) {
+        .footer-col {
+          width: 100%;
+          margin: bottom 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- footer  -->
+    <footer>
+      <div class="container">
+        <h2>Footer</h2>
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Service</a></li>
+              <li><a href="#">Privicy Policy</a></li>
+              <li><a href="#">Affiliate Program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Return</a></li>
+              <li><a href="#">Order</a></li>
+              <li><a href="#">Payment Option</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Online Shop</h4>
+            <ul>
+              <li><a href="#">Watch</a></li>
+              <li><a href="#">Cloths</a></li>
+              <li><a href="#">Mobile</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Electronic</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
